@@ -9,11 +9,13 @@ OS 공부 및 실습 코드 저장소
 System_call :  table file, header file, systemcall 함수 구현한 .c 파일 존재     
 Makefile : 시스템콜 등록 후 동작 테스트용 실행파일 생성     
 #### 실행 방법
+커널 파일들    
 1. 사용자 CPU archtecture 에 맞춰 .tlb file을 옮긴다.    
 2. syscalls.h 파일은 {kernel sourse coude dir}/include/linux 에 옮긴다. 
 3. {kernel sourse coude dir}/kernel에 sys_op_{연산이름} 파일을 옮긴다. 
 4. {kernel sourse coude dir}/kernel에 make file 에 system_call 디렉토리 안 Makefile 을 옮긴다.     
-5. 커널 컴파일 후 실행     
+5. 커널 컴파일 후 실행    
+테스트 코드 실행법     
 $> make   
 $> ./syscall     
 (수식 입력) 개행.
