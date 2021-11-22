@@ -2,7 +2,7 @@
 ## introduction 
 OS 공부 및 실습 코드 저장소     
 
-### System_call_test
+## System_call_test
 사용 커널 버전 : 5.11.22    
 
 #### 구성요소 
@@ -22,3 +22,25 @@ $> ./syscall
 입력방법 :      
 실행 파일 실행 후 “1+2” ,”1-2” 또는 “  1 +     2 “ 처럼 공백을 포함해도 상관 없다.     
 입력의 끝은 개행으로 구분한다. 음수는 (-1) 과 같은 형태만 허용한다.      
+
+## page_replacement     
+page_repacement 기법 : 소스파일명   
+FIFO : fifo.c    
+Optimal : opt.c    
+Least Recently Used : lru.c    
+Second Chance : second-chance.c  
+### 실행방법 
+make   
+./Replace < inputfile>  ( input file이 input.txt일 때 -> ./Replace input.txt )     
+각 기법에 대해 입력으로 받을 수 있는 String     
+Optimal Algorithm: “OPT” | “opt”    
+FIFO Algorithm: “FIFO” | “fifo”     
+Least Recently Uesd Algorithm: “LRU” | “lru”     
+Second Chance Algorithm: “Second-Chance” | “second-chance”     
+모든 알고리즘 출력: “all”      
+### input file 형식   
+page frame 수 (1 이상 , 4 이하)     
+page reference string (공백으로 구분, 30개 이하)    
+ex)
+4
+1 2 3 1 2 3 1 2 3 
