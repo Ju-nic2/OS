@@ -30,8 +30,8 @@ Optimal : opt.c
 Least Recently Used : lru.c    
 Second Chance : second-chance.c  
 ### 실행방법 
-make   
-./Replace < inputfile>  ( input file이 input.txt일 때 -> ./Replace input.txt )     
+1. make   
+2. ./Replace < inputfile>  ( input file이 input.txt일 때 -> ./Replace input.txt )     
 각 기법에 대해 입력으로 받을 수 있는 String     
 Optimal Algorithm: “OPT” | “opt”    
 FIFO Algorithm: “FIFO” | “fifo”     
