@@ -30,14 +30,16 @@ Optimal : opt.c
 Least Recently Used : lru.c    
 Second Chance : second-chance.c  
 ### 실행방법 
-1. make   
-2. ./Replace < inputfile>  ( input file이 input.txt일 때 -> ./Replace input.txt )     
-각 기법에 대해 입력으로 받을 수 있는 String     
+$>  make   
+$> ./Replace < inputfile>  ( input file이 input.txt일 때 -> ./Replace input.txt )     
+
+### 각 기법에 대해 입력으로 받을 수 있는 String     
 Optimal Algorithm: “OPT” | “opt”    
 FIFO Algorithm: “FIFO” | “fifo”     
 Least Recently Uesd Algorithm: “LRU” | “lru”     
 Second Chance Algorithm: “Second-Chance” | “second-chance”     
-모든 알고리즘 출력: “all”      
+모든 알고리즘 출력: “all”   
+
 ### input file 형식   
 page frame 수 (1 이상 , 4 이하)     
 page reference string (공백으로 구분, 30개 이하)    
