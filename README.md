@@ -1,6 +1,16 @@
 # OS 
 ## introduction 
 OS 공부 및 실습 코드 저장소     
+## CPU_Scheduling    
+리눅스 CPU 스켸쥴링 실험    
+사용 커널 버전 : 5.11.22    
+
+### 실험 방법    
+생성 프로세스 수 : 21개     
+CFS: 기본 CFS 스켸쥴러 실험 
+CFSNice: CFS 스켸쥴러 + nice 값 변경.
+실험결과.pdf : 각 실험 결과, FIFO 스켸쥴러로 변경후 실험결과 포함. + CPU_Burst_time 분석결과    
+
 
 ## System_call_test
 사용 커널 버전 : 5.11.22    
@@ -46,3 +56,13 @@ page reference string (공백으로 구분, 30개 이하)
 ex)
 4
 1 2 3 1 2 3 1 2 3 
+
+## Synchronization_Tool
+리눅스에서 제공하는 동기화 도구 사용     
+Pthread를 이용하여 교차로에서의 차량 진입 문제 해결 프로그램 구현하기     
+요구조건.txt 첨부.      
+결과분석 : input을 고정하여 반복해봤을때 나오는 결과 분석.   
+
+
+
+
